@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vineet Kumar - Web Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Vineet Kumar - Web Developer. HTML, CSS, JavaScript resources and a fun game!">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container hero">
+            <div>
+                <h1>Vineet Kumar</h1>
+                <p class="subtitle">Web Developer | Creative Coder</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <img src="WhatsApp Image 2025-10-07 at 10.29.34_59d49b8a.jpg" alt="Vineet Kumar" class="profile-pic">
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#game">Game</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/vkbansal78132-sudo/VINEET" target="_blank" class="github-link">GitHub</a>
+    </nav>
+
+    <main>
+        <section id="about" class="container card">
+            <h2>About Me</h2>
+            <p>Hello! I’m <strong>Vineet Kumar</strong>, a passionate web developer skilled in HTML, CSS, and JavaScript. I love creating beautiful, responsive websites and sharing coding knowledge. Scroll down for resources, samples, and a fun web game!</p>
+        </section>
+
+        <section id="html" class="container card highlight">
+            <h2>HTML <span>What & Why</span></h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages and web applications. It structures your content with elements like headings, paragraphs, images, and links.</p>
+            <pre><code class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <ul>
+                <li><strong>Tip:</strong> Always use semantic tags (like &lt;header&gt;, &lt;main&gt;, &lt;footer&gt;).</li>
+                <li><strong>Resource:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Guide</a></li>
+            </ul>
+        </section>
+
+        <section id="css" class="container card highlight">
+            <h2>CSS <span>Styling the Web</span></h2>
+            <p>CSS (Cascading Style Sheets) lets you design and style your web pages. Make them colorful, responsive, and animated!</p>
+            <pre><code class="code-block">
+body {
+  background: linear-gradient(120deg, #e0e7ff, #f9fafb);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #2d3748;
+  text-align: center;
+}
+            </code></pre>
+            <ul>
+                <li><strong>Tip:</strong> Use Flexbox or Grid for layouts.</li>
+                <li><strong>Resource:</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox Guide</a></li>
+            </ul>
+        </section>
+
+        <section id="js" class="container card highlight">
+            <h2>JavaScript <span>Make it Dynamic!</span></h2>
+            <p>JavaScript adds interactivity and logic to your website. Handle user actions, fetch data, build games, and more!</p>
+            <pre><code class="code-block">
+// Show an alert on button click
+document.querySelector('.btn').onclick = function() {
+  alert('Welcome to my portfolio!');
+};
+            </code></pre>
+            <ul>
+                <li><strong>Tip:</strong> Always keep your JS code organized and use <code>console.log()</code> for debugging.</li>
+                <li><strong>Resource:</strong> <a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+            </ul>
+        </section>
+
+        <section id="game" class="container card game-section">
+            <h2>🎮 Play: Guess the Number Game!</h2>
+            <p>Try your luck and guess the number between 1 and 100. Enter your guess below:</p>
+            <input type="number" id="guess-input" min="1" max="100" placeholder="Enter number">
+            <button onclick="checkGuess()" class="btn">Guess</button>
+            <p id="game-message"></p>
+            <button onclick="resetGame()" id="reset-btn" class="btn" style="display:none;">Play Again</button>
+        </section>
+
+        <section id="contact" class="container card">
+            <h2>Contact</h2>
+            <p>Have a project or want to connect? Reach out!</p>
+            <ul>
+                <li>Email: <a href="mailto:vkbansal78132@gmail.com">vkbansal78132@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/vkbansal78132-sudo/VINEET" target="_blank">github.com/vkbansal78132-sudo/VINEET</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Vineet Kumar | Built with HTML, CSS & JavaScript</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
